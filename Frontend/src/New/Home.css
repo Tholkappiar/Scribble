@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.logo-name {
+  color: rgba(244, 202, 78, 0.653);
+}
+
+.App-header {
+  background-image: url('./layer-base.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: transparent !important;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: rgba(200, 194, 194, 0.138);
+  z-index: 1; /* Add a higher z-index value */
+}
+
+.content {
+  margin-top: 100px;
+  color: #fff;
+  background-color: transparent !important;
+  padding-top: 60px; /* Add padding to create space for the navbar */
+  text-align: left !important;
+}
+
+/* Add styles for the scroll effect */
+.navbar.scroll {
+  background-color: #000000;
+}
+
+.navbar.scroll .logo-name {
+  color: #efba1c;
+}
+
+.navbar.scroll .nav-link {
+  color: #ffffff;
+}
+.logo-page-name{
+  color: white;
+  text-align: left;
+}

@@ -1,0 +1,40 @@
+/* About.css */
+.About {
+    text-align: center;
+  }
+  
+  .About-header {
+    background-image: url('./dungeon.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  .about-title{
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      padding: 10px;
+    }
+  }
+  

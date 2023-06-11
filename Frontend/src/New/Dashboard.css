@@ -1,0 +1,218 @@
+#container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #addbtn,
+  #delbtn,
+  #actions,
+  #action-del,
+  #logout {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Add this line */
+  }
+  *{
+    text-decoration: none !important;
+  }
+  #delbtn {
+    background-color: #f44336;
+  }
+  
+  #addbtn:hover,
+  #delbtn:hover,
+  #actions:hover,
+  #action-del:hover,
+  #logout:hover {
+    background-color: #ee7600;
+    text-decoration: none; /* Add this line */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  th.asc {
+    color: green;
+  }
+  
+  th.desc {
+    color: red;
+  }
+  
+  #id,
+  #name,
+  #age,
+  #phone,
+  #pos,
+  #salary,
+  #action {
+    width: 10%;
+    max-width: 150px;
+  }
+  
+  #actions,
+  #action-del {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .entries-per-page {
+    display: flex;
+    align-items: center;
+  }
+  
+  .entries-per-page span {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .entries-per-page select {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .page-buttons-container {
+    display: flex;
+  }
+  
+  .page-button {
+    border: none;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .page-button.active {
+    background-color: #ff8c00;
+    color: white;
+  }
+  
+  #logout {
+    background-color: #f44336;
+    height: 35px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #id,
+    #name,
+    #age,
+    #phone,
+    #pos,
+    #salary,
+    #action {
+      width: auto;
+    }
+  
+    #addbtn,
+    #delbtn,
+    #actions,
+    #action-del,
+    #logout {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  #action-del {
+    margin-top: 5px;
+  }
+  
+  #delbtn,
+  #logout {
+    margin-top: 10px;
+  }
+  .confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .confirmation-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .confirmation-buttons {
+    margin-top: 10px;
+  }
+  
+  .confirmation-modal button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff8c00;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .confirmation-modal button:hover {
+    background-color: #ee7600;
+  }
+  .confirmation-buttons .confirm-yes:hover, .confirm-yes:active{
+    background-color: red;
+    transition: 0.5s;
+  }
+  .logo-name-dash{
+    margin-top: 50px;
+  }

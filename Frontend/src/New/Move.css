@@ -1,0 +1,108 @@
+.App {
+    text-align: center;
+  }
+  .logo-name {
+    color: rgba(244, 202, 78, 0.653);
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.021);
+    z-index: 1; /* Add a higher z-index value */
+  }
+  
+  .content {
+    margin-top: 100px;
+    color: #000000;
+    background-color: transparent !important;
+    padding-top: 60px; /* Add padding to create space for the navbar */
+  }
+  
+  .page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+  }
+  
+  .left {
+    flex: 1;
+    padding-right: 100px;
+  }
+  
+  .moving-image {
+    animation: moveUpDown 4s infinite ease-in-out;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(-10px);
+    }
+     50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .right {
+    flex: 1;
+    padding-top: 150px;
+  }
+  
+  .right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .right p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+    }
+  
+    .content {
+      margin-top: 50px;
+    }
+  
+    .page {
+      flex-direction: column;
+    }
+  
+    .left,
+    .right {
+      padding: 0;
+    }
+  
+    .right h2 {
+      text-align: center;
+    }
+  }
+  
